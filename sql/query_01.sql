@@ -1,0 +1,30 @@
+SELECT
+    e.EMPLOYEE_ID,
+    e.FIRST_NAME,
+    e.LAST_NAME,
+    e.FIRST_NAME || ' ' || e.LAST_NAME AS FULL_NAME,
+    e.SALARY,
+    j.JOB_TITLE,
+    e.DEPARTMENT_ID,
+    d.DEPARTMENT_NAME,
+    j.MIN_SALARY,
+    j.MAX_SALARY
+FROM
+    HR.EMPLOYEES e
+
+
+LEFT JOIN
+    HR.DEPARTMENTS d 
+        ON e.DEPARTMENT_ID = d.department_id
+
+
+LEFT JOIN
+    HR.JOBS J
+        on e.JOB_ID = j.JOB_ID
+
+WHERE
+    e.DEPARTMENT_ID IS NOT NULL
+
+ORDER BY
+    d.DEPARTMENT_NAME,
+    e.SALARY DESC
