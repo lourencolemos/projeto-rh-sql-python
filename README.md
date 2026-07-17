@@ -1,5 +1,7 @@
 # 📊 Projeto RH - Análise de Dados com SQL e Python
 
+![Banner](images/banner.png)
+
 ## 👨‍🎓 Aluno
 
 **Nome:** Lourenço Lemos
@@ -99,33 +101,53 @@ Foram realizadas:
 
 ## Distribuição Salarial
 
-![Histograma](images/query_01_histograma_salarios.png)
+![Histograma](images/query_01_histograma_distribuicao_salarial.png)
 
-O histograma mostra concentração de colaboradores nas menores faixas salariais e poucos salários elevados, caracterizando uma distribuição assimétrica à direita.
+A distribuição salarial apresenta assimetria, com uma maior concentração de colaboradores nas faixas salariais mais baixas e uma redução gradual da quantidade de colaboradores à medida que os salários aumentam. 
+
+Esse comportamento é esperado, já que a base de dados reflete os salários de uma empresa, e nessas estruturas é normal que poucos cargos de liderança concentrem salários significativamente superiores à média.
 
 ---
 
 ## Boxplot
 
-![Boxplot](images/query_01_boxplot_salarios.png)
+![Boxplot](images/query_01_boxplot_distribuicao_salarial.png)
 
-O boxplot evidencia a presença de um outlier correspondente ao maior salário da empresa, pertencente a um cargo executivo.
+O boxplot confirma a assimetria na distribuição salarial, evidenciando um outlier que corresponde ao maior salário da empresa. 
+
+Esse valor representa um cargo executivo, não caracterizando assim um erro nos dados, mas sim uma característica da empresa. 
+
+A maior parte dos salários concentra-se em uma faixa relativamente menor quando comparada ao valor máximo observado.
 
 ---
 
 ## Salário Médio por Departamento
 
-![Departamento](images/query_01_barplot_salario_departamento.png)
+![Departamento](images/query_01_barplot_salario_medio_departamento.png)
 
-Os departamentos executivos apresentam maior remuneração média, enquanto áreas operacionais concentram salários menores.
+É possível observar uma diferença grande entre as médias salariais de cada departamento.
+
+A áreas de executivos apresenta salário médio superior aos departamentos operacionais e administrativos. 
+
+Essa diferença pode ser entendida como um reflexo da complexidade das atividades realizadas em cada área da empresa.
 
 ---
 
 ## Quantidade de Funcionários
 
-![Funcionários](images/query_01_barplot_funcionarios_departamento.png)
+![Funcionários](images/query_01_barplot_quantidade_funcionarios_departamento.png)
 
-Os colaboradores concentram-se em poucos departamentos, enquanto áreas executivas possuem equipes reduzidas.
+A distribuição dos colaboradores entre os departamentos demonstra que a força de trabalho da empresa está concentrada nas áreas de venda e logística. 
+
+Já em departamentos estratégicos e executivos, como relações públicas e recursos humanos, o número de funcionários é bem menor, demonstrando uma estrutura padrão de empresas de médio e grande porte.
+
+## Conclusão da Query 1
+
+A análise dos dados salariais permitiu perceber que há uma distribuição assimétrica das remunerações, com predominância de salários mais baixos e poucos funcionários com cargos de alta remuneração.
+
+Além disso, foi possível observar que departamentos executivos concentram os maiores salários médios, enquanto as áreas operacionais tem a maior quantidade de colaboradores. 
+
+Esses resultados demonstram que a empresa analisada possui uma estrutura organizacional padrão para uma empresa multinacional.
 
 ---
 
@@ -158,17 +180,21 @@ Foram desenvolvidos gráficos para analisar:
 
 ## Funcionários por Região
 
-![Região](images/query_02_barplot_funcionarios_regiao.png)
+![Região](images/query_02_barplot_quantidade_funcionarios_regiao.png)
 
-A maior parte dos colaboradores concentra-se em uma única região geográfica.
+O gráfico de distribuição de colaboradores por regiões demonstra que a empresa concentra a maior parte de sua força de trabalho na América, o que pode indicar maior presença operacional nesse mercado.
+ 
+O gráfico demonstra uma presença de funcionários bem menor na Europa, sugerindo operações menores ou escritórios regionais.
 
 ---
 
 ## Salário Médio por Região
 
-![Salário Região](images/query_02_barplot_salario_regiao.png)
+![Salário Região](images/query_02_barplot_salario_medio_regiao.png)
 
-Foram observadas diferenças salariais entre as regiões analisadas.
+Esse gráfico nos permite vizualizar que há uma diferença de média salarial grande entre a Europa e a América, sendo a média salarial europeia quase o dobro da média na América. 
+
+Não é possível determinar uma causa somente analisando esse gráfico, já que essa variação pode estar relacionada ao custo de vida de cada região, às políticas salariais locais ou ao perfil dos cargos existentes em cada região.
 
 ---
 
@@ -176,15 +202,19 @@ Foram observadas diferenças salariais entre as regiões analisadas.
 
 ![País](images/query_02_barplot_quantidade_funcionarios_pais.png)
 
-Os Estados Unidos concentram a maior parte da força de trabalho da empresa.
+Os Estados Unidos concentram a maior parte dos colaboradores da base analisada, enquanto países como Reino Unido, Canadá e Alemanha apresentam equipes significativamente menores. 
+
+Esse resultado reforça a noção de que os Estados Unidos são o principal mercado e centro operacional da empresa.
 
 ---
 
 ## Salário Médio por País
 
-![Salário País](images/query_02_barplot_salario_pais.png)
+![Salário País](images/query_02_barplot_salario_funcionarios_pais.png)
 
-Os salários médios variam entre os países analisados, indicando diferenças na estrutura organizacional.
+A remuneração média varia entre os países analisados, indicando diferenças nas estruturas organizacionais e também a possibilidade de políticas de remuneração diferentes. 
+
+Essas diferenças podem refletir tanto características econômicas locais quanto a distribuição de cargos de maior responsabilidade em determinados países. A Alemanha, por exemplo, e o país com menor número de funcionários, mas é o país com a maior média salarial, o que indica que os funcionários alocados nesse lugar devem ter cargos mais altos.
 
 ---
 
@@ -192,7 +222,9 @@ Os salários médios variam entre os países analisados, indicando diferenças n
 
 ![Cidade](images/query_02_barplot_funcionarios_cidade.png)
 
-As cidades com maior número de colaboradores representam os principais polos administrativos da empresa.
+A concentração dos colaboradores em poucas cidades, uma nos EUA e outra no Reino Unido, mostra a existência de polos administrativos e operacionais. 
+
+Essa distribuição pode auxiliar na definição de estratégias relacionadas à gestão de pessoas, expansão das operações e alocação de recursos..
 
 ---
 
@@ -204,7 +236,7 @@ A análise permitiu identificar que:
 - Poucos colaboradores concentram os maiores salários.
 - Os departamentos executivos apresentam maior remuneração média.
 - A maior parte dos funcionários está concentrada nos Estados Unidos.
-- Existem diferenças salariais entre regiões e países.
+- Existem diferenças salariais grandes entre regiões e países.
 - A estrutura da empresa apresenta características típicas de uma organização multinacional.
 
 ---
@@ -214,7 +246,7 @@ A análise permitiu identificar que:
 1. Clone o repositório
 
 ```bash
-git clone <URL_DO_REPOSITÓRIO>
+git clone <https://github.com/lourencolemos/projeto-rh-sql-python>
 ```
 
 2. Instale as dependências
@@ -240,12 +272,9 @@ notebooks/analise_rh.ipynb
 Como evolução deste projeto, podem ser implementadas as seguintes melhorias:
 
 - Dashboard interativo em Power BI.
-- Dashboard em Streamlit.
 - Filtros dinâmicos.
 - Comparação salarial por cargo.
-- Análise temporal de admissões.
 - Indicadores de Recursos Humanos (KPIs).
-- Automatização da extração dos dados.
 
 ---
 
