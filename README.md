@@ -226,6 +226,11 @@ A concentração dos colaboradores em poucas cidades, uma nos EUA e outra no Rei
 
 Essa distribuição pode auxiliar na definição de estratégias relacionadas à gestão de pessoas, expansão das operações e alocação de recursos..
 
+## Conclusão da Query 2
+
+A análise geográfica mostrou que a empresa possui maior concentração de colaboradores nos Estados Unidos, seguido do Reino Unido, tanto em número de funcionários quanto na distribuição das operações. 
+
+Também foram observadas diferenças salariais entre países e regiões, indicando que fatores geográficos influenciam a composição da força de trabalho e a política de remuneração da organização.
 ---
 
 # 💡 Principais Resultados
@@ -239,6 +244,13 @@ A análise permitiu identificar que:
 - Existem diferenças salariais grandes entre regiões e países.
 - A estrutura da empresa apresenta características típicas de uma organização multinacional.
 
+## Conclusão Geral do Projeto
+
+Este projeto permitiu que eu unisse SQL, Python e análise exploratória de dados para analisar informações da base HR da Oracle. Inicialmente, usei consultas SQL para extrair e relacionar dados de funcionários, salários, cargos, departamentos e localização geográfica. Em seguida, utilizei a biblioteca Pandas para tratamento e análise dos dados, e as bibliotecas Matplotlib e Seaborn para a construção das visualizações.
+
+As análises demonstraram uma distribuição salarial assimétrica, característica de empresas com hierarquas bem definidas, além de evidenciar diferenças de remuneração entre departamentos, países e regiões. Foi possíve identificar que a força de trabalho se concentra em determinados departamentos e localidades, demonstrando assim uma visão da estrutura da empresa.
+
+O projeto demonstrou a importância da combinação entre consultas SQL e ferramentas de análise em Python para transformar dados brutos em informações relevantes para a tomada de decisão, práticas fundamentais de análise de dados e Business Intelligence.
 ---
 
 # ▶ Como Executar
